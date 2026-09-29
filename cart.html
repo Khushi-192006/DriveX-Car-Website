@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DriveX | Cart</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+
+    <header>
+
+        <nav class="navbar section-content">
+
+            <h2 class="nav-logo">
+                <a href="index.html" class="logo-image">
+                    🏎 DriveX
+                </a>
+            </h2>
+
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown-container">
+
+                    <a href="#" class="nav-link">
+                        Categories ▾
+                    </a>
+
+                    <ul class="drop-menu">
+                        <li><a href="index.html#suv">SUV</a></li>
+                        <li><a href="index.html#sedan">Sedan</a></li>
+                        <li><a href="index.html#sports-cars">Sports Cars</a></li>
+                        <li><a href="index.html#convertible">Convertible</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+                    <a href="featured.html" class="nav-link">
+                        Featured Cars
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    
+                    <a href="cart.html" class="nav-link">Cart (<span id="cart-count">0</span>)</a> 
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Cart Section -->
+
+    <section class="cart-section">
+
+        <div class="cart-container">
+
+            <div class="cart-heading">
+
+                <h1>YOUR CART</h1>
+
+                <p>
+                    Review the cars you've selected.
+                </p>
+
+            </div>
+
+
+            <div class="cart-content">
+
+                <!-- Cart Items -->
+                <!-- Example Cart Item -->
+
+                <div class="cart-items" id="cart-items">
+                </div>
+                <!-- Cart Summary -->
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">₹0</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span>Free</span>
+                </div>
+
+                <hr>
+
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span id="cart-total">₹0</span>
+                </div>
+                <button class="checkout-button" onclick="goToCheckout()">
+                    PROCEED TO CHECKOUT
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

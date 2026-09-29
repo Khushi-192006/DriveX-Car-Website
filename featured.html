@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveX | Featured Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="featured.css">
+</head>
+
+<body>
+    <!-- Header-->
+
+    <header>
+        <nav class="navbar section-content">
+            <h2 class="nav-logo">
+                <a href="index.html" class="logo-image">🏎 DriveX</a>
+            </h2>
+
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-item dropdown-container">
+
+                    <a href="#" class="nav-link">
+                        Categories ▾
+                    </a>
+
+                    <ul class="drop-menu">
+                        <li><a href="index.html#suv">SUV</a></li>
+                        <li><a href="index.html#sedan">Sedan</a></li>
+                        <li><a href="index.html#sports-cars">Sports Cars</a></li>
+                        <li><a href="index.html#convertible">Convertible</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+                    <a href="featured.html" class="nav-link">
+                        Featured Cars
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">Cart (<span id="cart-count">0</span>)</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <!--Featured Hero -->
+
+    <section class="featured-hero">
+        <div class="featured-hero-content">
+            <h1>FEATURED CARS</h1>
+            <p>
+                Discover our handpicked collection of
+                exceptional cars.
+            </p>
+        </div>
+    </section>
+    <section class="featured-section">
+        <div class="featured-container">
+            <div class="featured-heading">
+                <h2>OUR FEATURED COLLECTION</h2>
+
+                <p>
+                    Explore cars selected for performance,
+                    luxury and style.
+                </p>
+            </div>
+            <div class="featured-grid">
+
+                <!--Porsche 911-->
+
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="image/Porsche  911.png" alt="Porsche 911">
+                    </div>
+
+                    <div class="featured-details">
+                        <span>SPORTS CAR</span>
+
+                        <h3>Porsche 911</h3>
+
+                        <p>
+                            Iconic design with thrilling
+                            performance.
+                        </p>
+                        <div class="featured-bottom">
+                            <h4>
+                                ₹1.86 Crore
+                            </h4>
+                           <a href="index.html#porsche-911" class="details-button">
+                                View Details
+                            </a>
+                            <button class="add-cart-button"
+                                onclick="addToCart('Porsche 911', '18600000', 'image/Porsche 911.png')">Add to
+                                Cart</button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Range  Rover-->
+
+
+
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="image/Range Rover.png" alt="Rang Rover">
+                    </div>
+                    <div class="featured-details">
+                        <span>LUXURY SUV</span>
+
+                        <h3>Range Rover</h3>
+
+                        <p>
+                            Luxury, comfort and powerful
+                            performance.
+                        </p>
+                        <div class="featured-bottom">
+                            <h4>₹2.39 Crore</h4>
+
+                            <a href="index.html#range-rover" class="details-button">
+                                View Details
+                            </a>
+                            <button class="add-cart-button"
+                                onclick="addToCart('Range Rover', 23900000, 'image/Range Rover.png')">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- BMW 5 Sreies-->
+
+
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="image/BMW 5 Series.jpg" alt="BMW 5 series">
+                    </div>
+                    <div class="featured-details">
+                        <span>SEDAN</span>
+
+                        <h3>BMW 5 Series</h3>
+
+                        <p>
+                            Premium comfort with dynamic
+                            performance.
+                        </p>
+                        <div class="featured-bottom">
+                            <h4>₹75.80 Lakh</h4>
+
+                            <a href="index.html#bmw-5-series" class="details-button">
+                                View Details
+                            </a>
+                            <button class="add-cart-button"
+                                onclick="addToCart('BMW 5 Series', 7580000, 'image/BMW 5 Series.jpg')">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- BMW Z4 -->
+
+
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="image/BMW Z4.png">
+                    </div>
+                    <div class="featured-details">
+                        <span>CONVERTIBLE</span>
+                        <h3>BMW Z4</h3>
+                        <p>
+                            Open-top driving with sporty
+                            performance.
+                        </p>
+                        <div class="featured-bottom">
+
+                            <h4>₹90.90 Lakh</h4>
+
+                            <a href="index.html#bmw-z4" class="details-button">
+                                View Details
+                            </a>
+                            <button class="add-cart-button" onclick="addToCart('BMW Z4', 9090000, 'image/BMW Z4.png')">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Ferrari 488 -->
+
+
+                <div class="featured-card">
+
+                    <div class="featured-image">
+                        <img src="image/Ferrari 488.png" alt="Ferrari 488">
+                    </div>
+
+                    <div class="featured-details">
+
+                        <span>SPORTS CAR</span>
+
+                        <h3>Ferrari 488</h3>
+
+                        <p>
+                            Italian performance with
+                            breathtaking design.
+                        </p>
+
+                        <div class="featured-bottom">
+
+                            <h4>₹4.02 Crore</h4>
+
+                            <a href="index.html#ferrari-488" class="details-button">
+                                View Details
+                            </a>
+                            <button class="add-cart-button"
+                                onclick="addToCart('Ferrari 488', 40200000, 'image/Ferrari 488.png')">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BMW X7 -->
+
+
+                <div class="featured-card">
+
+                    <div class="featured-image">
+                        <img src="image/BMW X7.png" alt="BMW X7">
+                    </div>
+
+                    <div class="featured-details">
+
+                        <span>LUXURY SUV</span>
+
+                        <h3>BMW X7</h3>
+
+                        <p>
+                            Spacious luxury combined with
+                            powerful performance.
+                        </p>
+
+                        <div class="featured-bottom">
+
+                            <h4>₹1.30 Crore</h4>
+
+                            <a href="index.html#bmw-x7" class="details-button">
+                                View Details
+                            </a>
+                            <button class="add-cart-button" onclick="addToCart('BMW X7', '13000000', 'image/BMW X7.png')">
+                                Add to Cart
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+/* About Hero */
+
+.about-hero {
+    min-height: 45vh;
+    background: #1B262C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-hero-content h1 {
+    color: #f86521;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.about-hero-content p {
+    color: #BBE1FA;
+    font-size: 20px;
+}
+
+
+/* About Section */
+
+.about-section {
+    background: #0f2027;
+    padding: 80px 20px;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-details {
+    flex: 1;
+}
+
+.about-details h2 {
+    color: #f86521;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about-details p {
+    color: #BBE1FA;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.about-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 22px;
+    background: #f86521;
+    color: #1B262C;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.about-button:hover {
+    background: #BBE1FA;
+}
+
+
+/* Why DriveX */
+
+.why-section {
+    background: #1B262C;
+    padding: 70px 20px;
+}
+
+.why-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.why-container > h2 {
+    text-align: center;
+    color: #f86521;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    padding: 30px;
+    background: #0f2027;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+}
+
+.why-card h3 {
+    color: #BBE1FA;
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    color: #BBE1FA;
+    line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+
+    .about-hero {
+        min-height: 35vh;
+        padding: 40px 20px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 35px;
+    }
+
+    .about-hero-content p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .about-section {
+        padding: 50px 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .about-image,
+    .about-details {
+        width: 100%;
+    }
+
+    .about-details h2 {
+        font-size: 28px;
+    }
+
+    .about-details p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .why-section {
+        padding: 50px 20px;
+    }
+
+    .why-container > h2 {
+        font-size: 28px;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .why-card {
+        padding: 25px;
+    }
+
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>DriveX | CheckOut</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="checkout.css">
+
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+
+    <header>
+
+        <nav class="navbar section-content">
+
+            <h2 class="nav-logo">
+                <a href="index.html" class="logo-image">
+                    🏎 DriveX
+                </a>
+            </h2>
+
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown-container">
+
+                    <a href="#" class="nav-link">
+                        Categories ▾
+                    </a>
+
+                    <ul class="drop-menu">
+                        <li><a href="index.html#suv">SUV</a></li>
+                        <li><a href="index.html#sedan">Sedan</a></li>
+                        <li><a href="index.html#sports-cars">Sports Cars</a></li>
+                        <li><a href="index.html#convertible">Convertible</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="nav-item">
+                    <a href="featured.html" class="nav-link">
+                        Featured Cars
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="cart.html" class="nav-link">
+                        Cart
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <!--Checkout section-->
+    <section class="checkout-section">
+
+        <div class="checkout-container">
+            <div class="checkout-form">
+
+                <h2>CUSTOMER DETAILS</h2>
+
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" placeholder="Enter your mobile number">
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" rows="4" placeholder="Enter your complete address"></textarea>
+                </div>
+                <div class="checkout-summary">
+
+                    <h2>ORDER SUMMARY</h2>
+
+                    <div id="checkout-items"></div>
+
+                    <hr>
+
+                    <div class="checkout-total">
+                        <span>Total</span>
+                        <span id="checkout-total">₹0</span>
+                    </div>
+                    <button class="place-order-button" onclick="placeOrder()">
+                        PLACE ORDER
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="checkout-heading">
+
+                <h1>CHECKOUT</h1>
+
+                <p>Complete your details to place your order.</p>
+
+            </div>
+
+            <div id="order-success" class="order-success">
+
+                <div class="success-icon">✓</div>
+
+                <h2>ORDER PLACED SUCCESSFULLY!</h2>
+
+                <p>
+                    Thank you for choosing DriveX.
+                    Your order has been received successfully.
+                </p>
+
+                <a href="index.html" class="success-button">
+                    BACK TO HOME
+                </a>
+
+            </div>
+
+            <script src="script.js"></script>
+
+        </body>
+
+
+</html>
